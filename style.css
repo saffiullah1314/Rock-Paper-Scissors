@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    flex-direction: column;
+}
+h1{
+    font: Merriweather ;
+    color: #1e4250;
+    margin: 2vmin;  
+    font-size: 5vmin;
+     
+}
+.container{
+    background-color: #f7f7f7;
+    height: 70vh;
+    width: 70vw;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px grey;
+    padding: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+img{
+    height: 10vh;
+    width: 10vw;
+}
+.play{
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25%;
+    height: 70%;
+    width: 100%;
+
+}
+.user{
+    text-align: center;
+}
+.user h2{
+    font-size: 4vmin;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+    color: #1e4250;
+}
+.user-img{
+    height: 15vmin;
+    width: 15vmin;
+    transform: rotate(90deg);
+    margin: 1vmin 0;
+    
+}
+.useranimate {
+    animation: useranimate 0.5s linear infinite;
+}
+
+@keyframes useranimate{
+    0%{
+        transform:rotate(90deg)  translateX(0);
+    }
+    25%{
+      transform: rotate(90deg)  translateX(-5px);
+  }
+   50%{
+      transform:rotate(90deg)  translateX(5px);
+  }
+   75%{
+        transform:rotate(90deg)  translateX(5px);
+    }
+    100%{
+      transform: rotate(90deg)  translateX(0px);
+  }
+  }
+.user-point{
+    font-size: 4vmin;
+    font-weight: bold;
+    color: rgb(82, 73, 39);
+}
+.comp{
+    text-align: center;
+}
+.comp h2{
+    font-size: 4vmin;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+    color: #1e4250;
+}
+.comp-img{
+    height: 15vmin;
+    width: 15vmin;
+    transform: rotate(90deg) scaleY(-1) ;
+    margin: 1vmin 0;
+   
+}
+.comp-point{
+    font-size: 4vmin;
+    font-weight: bold;
+    color: rgb(82, 73, 39);
+}
+.companimate {
+    animation: companimate 0.5s linear infinite;
+}
+
+ 
+@keyframes companimate{
+  0%{
+      transform:rotate(90deg) scaleY(-1) translateX(0);
+  }
+  25%{
+    transform: rotate(90deg) scaleY(-1) translateX(-5px);
+}
+ 50%{
+    transform:rotate(90deg) scaleY(-1) translateX(5px);
+}
+ 75%{
+      transform:rotate(90deg) scaleY(-1)  translateX(5px);
+  }
+  100%{
+    transform: rotate(90deg) scaleY(-1) translateX(0px);
+}
+}
+.board{
+    font-size: 7vmin;
+    color: #1e4250;
+    position: absolute;
+    top:55%;
+    
+}
+
+.choices{
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 5vmin;
+}
+.choices .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 1vmin;
+    opacity: 0.5;
+    transition-duration: 0.2s;
+
+}
+.choices p{
+    font-size: 2.5vmin;
+    
+}
+.choices .box:hover{
+    opacity: 1;
+    
+}
+.choices img{
+    height: 6vmin;
+    width: 6vmin;   
+}
+@media (max-height: 900px) and (max-width: 500px) {
+    /* Your styles here */
+    .container {
+        width: 90vw;
+        height: 80vh;
+       
+    }
+
+     
+ }
