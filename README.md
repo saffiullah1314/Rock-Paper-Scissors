@@ -13,7 +13,7 @@ This is an interactive **Rock-Paper-Scissors game** built using **HTML, CSS, and
 
 ## 🔗 Live Demo
 
-👉 [Play the Game Now](https://saffiullah1314.github.io/Rock-Paper-Scissors---Animated-Battle-Game/)  
+👉 [Play the Game Now](https://saffiullah1314.github.io/Rock-Paper-Scissors/)  
 
 ---
 
